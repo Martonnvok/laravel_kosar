@@ -62,8 +62,8 @@ class BasketController extends Controller
     //3.feladat Töröld az összes 2 napnál régebbi kosár tartalmakat!
     public function basketTodayDelete(){
         
-        $basketsToday = DB::table('baskets')
-            ->whereDate('baskets.date', now()->subDays(2))
+        $productsToday = DB::table('products')
+            ->whereDate('products.date', now()->subDays(2))
             ->delete();
     }
 }

@@ -31,4 +31,4 @@ Route::post('baskets', [BasketController::class, 'store']);
 
 
 Route::get('baskets/{user_id}/{type_id}', [BasketController::class, 'bizonyosTermektipus']);
-Route::get('basket_today_delete', [BasketController::class, 'basketTodayDelete']);
+Route::delete('basket_today_delete', [BasketController::class, 'basketTodayDelete']);
